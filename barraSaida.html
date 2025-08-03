@@ -1,0 +1,33 @@
+<html>
+
+<style></style>
+/* Fixar navbar no topo, largura total e acima do conteúdo */
+nav.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1030; /* para garantir que fique acima de outros elementos */
+}
+
+/* Dar espaço no topo do body para o conteúdo não ficar atrás da navbar fixa */
+body {
+  padding: 100px 20px 150px; /* 100px corresponde à altura da navbar + espaçamento */
+}
+</style>
+
+
+
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">ENCONTRE ESPERANÇA</a>
+      <div class="d-flex align-items-center ms-auto me-4">
+        <span id="admin-nome" class="me-3 text-white fw-bold"></span>
+        <button onclick="sair()" class="btn btn-danger btn-sm">Sair</button>
+      </div>
+    </div>
+  </nav>
+
+</html>
