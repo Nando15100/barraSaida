@@ -1,0 +1,2 @@
+# barraSaida
+Barrsa Saída
